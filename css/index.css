@@ -1,0 +1,27 @@
+* {
+  background-color: #FF9671;
+}
+body {
+  display: grid;
+  grid-template-rows: 95vh 5vh;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer {
+  text-align: center;
+}
+
+#list {
+  margin-top: 3rem;
+}
+
+#list ul {
+  list-style: none;
+}
