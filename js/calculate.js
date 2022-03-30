@@ -5,7 +5,8 @@ export const getResultFromVoice = (text) => {
   const operation = hasOperation(text)
   if (!operation) return output.textContent = `Operação não compreendida, o escutado foi: ${text}`
   const result = calculate(text, operation)
-  return output.textContent = `O resultado é ${result}`;
+  const formatedResult = result.toString().includes(".") ? result.toFixed(2) : result
+  return output.textContent = `O resultado é ${formatedResult}`;
 }
 
 const calculate = (text, operation) => {
