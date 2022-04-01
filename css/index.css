@@ -1,5 +1,9 @@
+:root {
+  --main-color: #FF9671
+}
+
 * {
-  background-color: #FF9671;
+  background-color: var(--main-color);
 }
 body {
   display: grid;
